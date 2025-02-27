@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,79 +8,80 @@
     <title>Maskotiando</title>
     <link rel="stylesheet" href="Estilo.css">
     <link rel="shortcut icon" href="perro.png">
-</head>
-<body>
-    <!-- <h1>inicio</h1> -->
     <script src="script.js"></script>
-    <header>
-        <img #image src="Imagenes/Logotipo tienda de mascotas perro y gato azul y morado.png" alt="">
+</head>
+
+<body>
+    <header class="container">
+        <div class="header">
+            <a class="image-header" href="#"><img src="Imagenes/Logotipo tienda de mascotas perro y gato azul y morado.png" alt=""></a>
+            <h1>INICIO</h1>
+        </div>
+
+        <div>
+            <a class="menu" href="#">Inicio</a>
+            <a class="menu" href="Servicos.html">Servicios</a>
+            <a class="menu" href="Proyectos.html">Proyectos</a>
+            <a class="menu" href="Compras.html">Compras</a>
+            <a class="menu" href="Quienessomos.html">Nosotros</a>
+        </div>
     </header>
 
-    <nav>
-        <a class="menu" href="#">Inicio</a>
-        <a class="menu" href="Quienessomos.html">Nosotros</a>
-        <a class="menu" href="Servicos.html">Servicios</a>
-        <a class="menu" href="Proyectos.html">Proyectos</a>
-        <a class="menu" href="Compras.html">Compras</a>
-    </nav>
+    <article>
 
-    
-
-    <article>       
-                   
         <img src="Imagenes/gato.PNG" alt="">
 
-        <h2>Maskotiando</h2>
-            <p>Somos una pagina web que permite realizar las compras rápidas, divertidas y fáciles.</p>
-            
-            <article>Contactanos</article>
-            <p>Escríbenos y conoce la exclusividad de nuestra actividad</p>
-        
-            <article>accesorios</article>
-            <p>Por que jugar permite un mejor desarrollo, te guiamos en nuestro portafolio</p>
-        
-            <article>Alimentos</article>
-            <P>La salud de nuestros mascotas es fundamental, conoce nuestro portafolio rico y sano</P>
+        <h2>Maskotiando</h2></br>
+        <p>Somos una pagina web que permite realizar las compras rápidas, divertidas y fáciles.</p></br>
+
+        <article>Contactanos</article>
+        <p>Escríbenos y conoce la exclusividad de nuestra actividad</p>
+
+        <article>accesorios</article>
+        <p>Por que jugar permite un mejor desarrollo, te guiamos en nuestro portafolio</p>
+
+        <article>Alimentos</article>
+        <P>La salud de nuestros mascotas es fundamental, conoce nuestro portafolio rico y sano</P>
     </article>
 
-  <footer class="footer container">
+    <footer class="container">
+        <div class="footer-link">
+            <div class="footer-item">
+                <h3 class="h3">Email</h3>
+                <p><b>maskotiando@gmail.com</b></p>
+            </div>
 
-    <div class="footer-link">
-        <div class="link">
-            <h3>Galeria</h3>
-            <ul>
-                <li><a href="">Comunidad</a></li>
-                <li><a href="">Siguenos</a></li>
-                <li><a href="">Donde encontrarnos</a></li>
-            </ul>
+            <div class="footer-item">
+                <h3 class="h3">Teléfono</h3>
+                <p><b>312 2002020</b></p>
+            </div>
+
+            <div class="footer-item">
+                <h3>Redes Sociales</h3>
+                <ul class="list">
+                    <li class="list-item"><a href="https://www.facebook.com"><img class="icon-size"
+                                src="Imagenes/facebook.png" alt=""></a></li>
+                    <li class="list-item"><a href="https://www.instagram.com"><img class="icon-size"
+                                src="Imagenes/instagram.png" alt=""></a></li>
+                    <li class="list-item"><a href="https://www.x.com"><img class="icon-size" src="Imagenes/x.png"
+                                alt=""></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h3 class="h3">Suscribete</h3>
+                <form>
+                    <input id="email" type="email" placeholder="Ingrese email">
+                    <button onclick="subscribe()">Suscribete</button>
+                </form>
+            </div>
 
         </div>
 
-        <div class="link"></div>
-            <h3>Redes Sociales</h3>
-            <ul>
-                <li><a href="">facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">twiter</a></li>
-            </ul>
-
-        </div>
-
-        <div class="link"></div>
-            <h3>Suscribete</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <form>
-                <input type="email" placeholder="correo">
-                <input class="btn"type="submit" value="suscribete">           
-
-        </div>
-
-    </div>
-
-  </footer>
+    </footer>
 
 
-    
+
 </body>
+
 </html>

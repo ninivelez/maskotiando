@@ -8,13 +8,13 @@ var imagenes = ['imagenes/perro1.png,imagenes/pg.png,imagenes/productos2.png,ima
     cont = 0;
 
 function carrusel(contenedor){
-    contenedor.addEventListener('click', e =>{
-        let atras = contenedor.querySelector('.atras'),
-            adelante = contenedor.querySelector('adelante'),
+    contenedor.addEventListener('click', e => {
+        let atras = contenedor.querySelector('.atras botones'),
+            adelante = contenedor.querySelector('adelante botones'),
             imagenes = contenedor.querySelector('imagenes'),
             tgt = e.target;
 
-        if(tgt == atras)}{
+        if(tgt == atras) {
             if(cont >0){
                 img.src = imagenes[cont - 1];
                 cont --;
@@ -33,7 +33,7 @@ function carrusel(contenedor){
             } 
     }
 
-    );
+});
 
 }
 
@@ -44,3 +44,8 @@ document.addEventListener("DOMcontentLoaded",() => {
 
 }
 );
+
+function subscribe() {
+    const email = document.getElementById('email').value;
+    alert('Suscripción correcta con el email: ' + email)
+}
