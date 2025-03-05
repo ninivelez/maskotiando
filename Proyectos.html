@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,82 +8,100 @@
     <title>Maskotiando</title>
     <link rel="stylesheet" href="Estilo.css">
     <link rel="shortcut icon" href="perro.png">
-    <link rel="stylesheet" href="css/Estilo.css">
-</head>
-<body>
-    <!-- <h1>Proyectos</h1> -->
+    <script src="variables-globales.js"></script>
     <script src="script.js"></script>
-    <header><img src="Imagenes/Logotipo tienda de mascotas perro y gato azul y morado.png" alt=""></header>
+</head>
 
-    <nav>
-        <a class="menu" href="index.html">Inicio</a>
-        <a class="menu" href="Quienessomos.html">Nosotros</a>
-        <a class="menu" href="Servicos.html">Servicios</a>
-        <a class="menu" href="#">Proyectos</a>
-        <a class="menu" href="Compras.html">Compras</a>
-    </nav>
+<body>
+    <header class="container">
+        <div class="header">
+            <a href="#"><img class="image-header"
+                    src="Imagenes/Logotipo tienda de mascotas perro y gato azul y morado.png" alt=""></a>
+            <a class="menu" href="index.html">Inicio</a>
+            <a class="menu" href="Servicos.html">Servicios</a>
+            <a class="menu" href="#">Proyectos</a>
+            <a class="menu" href="Compras.html">Compras</a>
+            <a class="menu" href="Quienessomos.html">Nosotros</a>
+        </div>
 
-    <article>Nuestro Proyecto</article>
-    
-    
-    <P>Construir y dar reconocimiento a la más grande tienda virtual de maskotas,
-         donde nuestros clientes son la base de nuestra empresa.
-        </P>
+        <!-- <div>
+            <a class="menu" href="index.html">Inicio</a>
+            <a class="menu" href="Servicos.html">Servicios</a>
+            <a class="menu" href="#">Proyectos</a>
+            <a class="menu" href="Compras.html">Compras</a>
+            <a class="menu" href="Quienessomos.html">Nosotros</a>
+        </div> -->
+    </header>
 
-         <!-- <img src="Imagenes/arnes.png" alt="" -->
+    <div class="proyecto-inicial">
+        <div>
+
+            <img class="imagen" src="Imagenes/productos2.png" width="200%" alt="">
+        </div>
+
+        <div class="txtx">
+            <h2>Nuestro Proyecto</h2>
+            <p>En Maskotiando, nuestra misión es promover el bienestar de las mascotas y fomentar la adopción
+                responsable. Creemos que todos los animales merecen un hogar amoroso, y trabajamos día a día para
+                ofrecerles una segunda oportunidad en la vida.</p>
+            <p>¿Quiénes Somos?</p>
+            <p>Somos un grupo de amantes de los animales comprometidos con la protección, cuidado y adopción de
+                mascotas. Nuestro proyecto nace con el objetivo de disminuir el número de animales abandonados y
+                promover la responsabilidad en la tenencia de mascotas. Trabajamos de la mano con refugios locales,
+                veterinarios y voluntarios para asegurar que cada mascota reciba el cuidado que necesita.</p>
+        </div>
+
+    </div>
 
 
-         <div class="contenedor">
 
-            <div class="atras botones">
-                &#60
-             </div>    
 
-             <div class="adelante botones">
-                &#62
-             </div>
+    <div class="carrusel-container">
+        <div class="carrusel">
+            <img src="Imagenes/perros1.png" alt="">
+            <img src="Imagenes/proyecto2.jpg" alt="">
+            <img src="Imagenes/proyecto3.jpg" alt="">
+        </div>
+        <button class="btn prev" onclick="mover(-1)">&#10094;</button>
+        <button class="btn next" onclick="mover(1)">&#10095;</button>
 
-             <img src="Imagenes/perros1.png" alt="" id="Imagenes">
-         </div>
+    </div>
 
-         <script src="js/script.js"></script>
-         
-
-  <footer class="footer container">
-
-            <div class="footer-link">
-                <div class="link">
-                    <h2>Galeria</h2>
-                    <ul>
-                        <li><a href="">Comunidad</a></li>
-                        <li><a href="">Siguenos</a></li>
-                        <li><a href="">Donde encontrarnos</a></li>
-                    </ul>
-        
-                </div>
-        
-                <div class="link"></div>
-                    <h2>Redes Sociales</h2>
-                    <ul>
-                        <li><a href="">facebook</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">twiter</a></li>
-                    </ul>
-        
-                </div>
-        
-                <div class="link"></div>
-                    <h2>Suscribete</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <form>
-                        <input type="email" placeholder="correo">
-                        <input class="btn"type="submit" value="suscribete">           
-        
-                </div>
-        
+    <footer class="container">
+        <div class="footer-link">
+            <div class="footer-item">
+                <h3 class="h3">Email</h3>
+                <p><b>maskotiando@gmail.com</b></p>
             </div>
-        
-        </footer>              
+
+            <div class="footer-item">
+                <h3 class="h3">Teléfono</h3>
+                <p><b>312 2002020</b></p>
+            </div>
+
+            <div class="footer-item">
+                <h3>Redes Sociales</h3>
+                <ul class="list">
+                    <li class="list-item"><a href="https://www.facebook.com"><img class="icon-size"
+                                src="Imagenes/facebook.png" alt=""></a></li>
+                    <li class="list-item"><a href="https://www.instagram.com"><img class="icon-size"
+                                src="Imagenes/instagram.png" alt=""></a></li>
+                    <li class="list-item"><a href="https://www.x.com"><img class="icon-size" src="Imagenes/x.png"
+                                alt=""></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h3 class="h3">Suscribete</h3>
+                <form>
+                    <input id="email" type="email" placeholder="Ingrese email">
+                    <button onclick="subscribe()">Suscribete</button>
+                </form>
+            </div>
+
+        </div>
+
+    </footer>
 </body>
+
 </html>

@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+
 }
 
 .container {
@@ -13,12 +14,8 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    padding: 25px;
+    padding: 10px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-}
-
-.footer.link {
-    display: flex;
 }
 
 .link {
@@ -79,15 +76,18 @@ body {
 .menu {
     color: #ffffff;
     font-size: 24px;
-    padding: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
+    /* padding: 50px; */
+    /* margin-right: 50px;
+    margin-left: 70px;
+    margin-top: 20px; */
+    margin: 20px 50px 0px 70px
 }
 
 article {
     text-align: center;
-    color: rgb(36, 1, 36);
-    font-family: fantasy;
+    /* color: rgb(36, 1, 36); */
+    justify-content: center;
+
 }
 
 * {
@@ -104,7 +104,7 @@ html {
 .contenedor {
     width: 100%;
     position: relative;
-    height: 780PX;
+    height: auto;
 }
 
 .botones {
@@ -139,10 +139,6 @@ html {
     top: calc(50% - 70px);
 }
 
-.footer-container {
-    position: relative;
-}
-
 .icon-size {
     height: 20px;
     width: 20px;
@@ -166,8 +162,8 @@ html {
 }
 
 .footer-item {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
     color: white;
 }
 
@@ -180,7 +176,9 @@ html {
 }
 
 .image-header {
-    margin-left: 70px;
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
 }
 
 h1 {
@@ -188,4 +186,179 @@ h1 {
     font-family: cursive;
     color: white;
     margin: 20px 20px 20px 300px;
+}
+
+.body-index {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.txt {
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+image {
+    width: 350px;
+    height: 250px;
+}
+
+.articulo-index {
+    display: flex;
+    margin: 20px
+}
+
+.servicio-ja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 100px 30px 80px
+}
+
+.servicio-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 100px 70px 80px
+}
+
+.proyecto-inicial {
+    display: flex;
+    margin: 50px 50px 50px 100px
+}
+
+.txtx {
+    /* margin-left: 120px; */
+    margin: 30px 30px 30px 200px;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: cursive;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.servicio-j {
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.compras-body {
+    justify-content: center;
+    align-items: center;
+    margin: 20px 100px 20px 80px
+}
+
+.nos_1 {
+    margin: 30px 30px 30px 30px;
+    display: flex;
+
+}
+
+.nos_2 {
+    margin: 0px 30px 30px 30px;
+    display: flex;
+}
+
+.nos_3 {
+    margin: 0px 30px 30px 30px;
+    display: flex;
+}
+
+.nos_3_1 {
+    margin: 0px 30px 30px 80px;
+    text-align: justify;
+}
+
+.nos_2_1 {
+    margin: 0px 30px 30px 80px;
+    text-align: justify;
+}
+
+.nos_1_1 {
+    margin: 0px 30px 30px 80px;
+    text-align: justify;
+}
+
+.nos_4_1 {
+    margin: 0px 30px 30px 30px;
+    text-align: justify;
+}
+
+.nos_4 {
+    margin: 0px 200px 30px 40px;
+    display: flex;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: cursive;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 10px 10px 10px 400px;
+}
+
+.carrusel-container {
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 500px;
+    margin-right: 400px;
+    margin-bottom: 20px;
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel img {
+    width: 400px;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.imagenes-servicios {
+    height: 200px;
+    width: 300px;
+}
+
+@media (max-width: 900px) {
+    .header {
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-link {
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-item {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white;
+    }
 }

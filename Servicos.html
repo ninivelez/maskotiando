@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,22 @@
     <link rel="stylesheet" href="Estilo.css">
     <link rel="shortcut icon" href="perro.png">
 </head>
+
 <body>
-    <!-- <h1>inicio</h1> -->
-    <script src="script.js"></script>
-    <header><img src="Imagenes/Logotipo tienda de mascotas perro y gato azul y morado.png" alt=""></header>
+    <header class="container">
+        <div class="header">
+            <a href="#"><img class="image-header"
+                    src="Imagenes/Logotipo tienda de mascotas perro y gato azul y morado.png" alt=""></a>
+            <a class="menu" href="index.html">Inicio</a>
+            <a class="menu" href="#">Servicios</a>
+            <a class="menu" href="Proyectos.html">Proyectos</a>
+            <a class="menu" href="Compras.html">Compras</a>
+            <a class="menu" href="Quienessomos.html">Nosotros</a>
+        </div>
+    </header>
 
-    <nav>
-        <a class="menu" href="index.html">Inicio</a>
-        <a class="menu" href="Quienessomos.html">Nosotros</a>
-        <a class="menu" href="#">Servicios</a>
-        <a class="menu" href="Proyectos.html">Proyectos</a>
-        <a class="menu" href="Compras.html">Compras</a>
-
-        
-        <article>Nuestro servicio</article>        
+    <div class="txt">
+        <h2>Nuestro servicio</h2>
 
         <p>Nuestra página web está para las compras más
             cómodas desde casa , el objetivo de dicha
@@ -31,52 +34,76 @@
             de productos a las personas de cualquier
             lugar. La web es accesible desde cualquier lugar.</p>
 
+        <p>
 
-            <article>Juguetes</article>
+        <p>Adopciones Responsables: Trabajamos para encontrar hogares adecuados para los animales abandonados. Cada
+            mascota es cuidadosamente evaluada para asegurar que se le asigne la mejor familia posible.
 
-            <img src="Imagenes/juguetes.png" alt="">
+            Educación y Concientización: Ofrecemos talleres, guías y artículos sobre el cuidado de las mascotas, la
+            importancia de la esterilización y cómo prevenir el maltrato animal.
 
-            <article>Alimentación</article>
+            Servicios Veterinarios: Colaboramos con clínicas veterinarias para ofrecer atención médica básica y
+            urgencias a nuestras mascotas rescatadas, garantizando su salud y bienestar.
 
-            <img src="Imagenes/comida.png" alt="">
+            Voluntariado y Donaciones: Sin la ayuda de nuestros voluntarios y donantes, nuestro proyecto no sería
+            posible. Si deseas unirte a nuestra causa, hay varias maneras de contribuir, ya sea con tu tiempo,
+            recursos o donaciones económicas.
 
-    </nav>
+        </p>
+    </div>
 
-    <footer class="footer container">
+    <article class="servicio-ja">
 
+        <article class="servicio-j">
+            <p><b>Juguetes</b></p>
+            <img class="imagenes-servicios" src="Imagenes/juguetes.png" alt="">
+        </article>
+
+
+
+        <article class="servicio-j">
+            <p><b>Alimentación</b></p>
+            <img class="imagenes-servicios" src="Imagenes/comida.png" alt="">
+
+        </article>
+
+    </article>
+
+    <footer class="container">
         <div class="footer-link">
-            <div class="link">
-                <h2>Galeria</h2>
-                <ul>
-                    <li><a href="">Comunidad</a></li>
-                    <li><a href="">Siguenos</a></li>
-                    <li><a href="">Donde encontrarnos</a></li>
-                </ul>
-    
+            <div class="footer-item">
+                <h3 class="h3">Email</h3>
+                <p><b>maskotiando@gmail.com</b></p>
             </div>
-    
-            <div class="link"></div>
-                <h2>Redes Sociales</h2>
-                <ul>
-                    <li><a href="">facebook</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">twiter</a></li>
-                </ul>
-    
+
+            <div class="footer-item">
+                <h3 class="h3">Teléfono</h3>
+                <p><b>312 2002020</b></p>
             </div>
-    
-            <div class="link"></div>
-                <h2>Suscribete</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+
+            <div class="footer-item">
+                <h3>Redes Sociales</h3>
+                <ul class="list">
+                    <li class="list-item"><a href="https://www.facebook.com"><img class="icon-size"
+                                src="Imagenes/facebook.png" alt=""></a></li>
+                    <li class="list-item"><a href="https://www.instagram.com"><img class="icon-size"
+                                src="Imagenes/instagram.png" alt=""></a></li>
+                    <li class="list-item"><a href="https://www.x.com"><img class="icon-size" src="Imagenes/x.png"
+                                alt=""></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h3 class="h3">Suscribete</h3>
                 <form>
-                    <input type="email" placeholder="correo">
-                    <input class="btn"type="submit" value="suscribete">           
-    
+                    <input id="email" type="email" placeholder="Ingrese email">
+                    <button onclick="subscribe()">Suscribete</button>
+                </form>
             </div>
-    
+
         </div>
-    
-      </footer>
+
+    </footer>
 </body>
+
 </html>
